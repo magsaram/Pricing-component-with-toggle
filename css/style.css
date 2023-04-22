@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --veryLightGray: hsl(240, 78%, 98%);
+  --lightGray: hsl(234, 14%, 74%);
+  --gray: hsl(233, 13%, 49%);
+  --darkGray: hsl(232, 13%, 33%);
+  --gradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
