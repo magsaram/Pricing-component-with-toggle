@@ -11,5 +11,76 @@
 }
 
 body {
+  position: relative;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--veryLightGray);
+  text-align: center;
+  color: var(--gray);
+}
+body > img {
+  position: absolute;
+  z-index: -1;
+}
+body > img:first-of-type {
+  top: -90px;
+  right: -200px;
+}
+body > img:last-of-type {
+  display: none;
+}
+h1 {
+  margin: 64px auto 40px;
+}
+header > div {
+  margin-bottom: 82px;
+  color: var(--lightGray);
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+main {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+main > div {
+  box-sizing: border-box;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+main > div h3 {
+  margin-bottom: 127px;
+  font-size: 18px;
+}
+.annually,
+.monthly {
+  position: absolute;
+  font-size: 72px;
+  color: var(--darkGray);
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.show {
+  display: block;
+}
+main div p {
+  width: 100%;
+  margin: 17px auto;
+}
+main div p:nth-child(4),
+main div p:nth-child(6) {
+  border-top: 1px solid var(--lightGray);
+  border-bottom: 1px solid var(--lightGray);
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
